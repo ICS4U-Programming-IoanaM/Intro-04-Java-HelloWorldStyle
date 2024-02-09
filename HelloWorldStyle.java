@@ -1,30 +1,24 @@
-/*
-* A program that as
-*
-* @author  Ioana Marinescu
-* @version 1.0
-* @since   2024 02 08
-*/
+/**
+ * A program that prints hello world.
+ *
+ * @author Ioana Marinescu
+ * @version 1.0
+ * @since 2024-02-08
+ */
 
-import java.util.Scanner;
-
-// class for today's lesson'
-public class HelloWorldStyle {
-    int userNum;
-    // constructor
-    public HelloWorldStyle() {
-        // scanner creation
-        Scanner sc = new Scanner(System.in);
-
-        // Asks user for a number
-        System.out.println("Enter a number:");
-        userNum = sc.nextInt();
-        sc.close();
+public final class HelloWorldStyle {
+    /**
+     * Private constructor to prevent instantiation of this utility class.
+     */
+    private HelloWorldStyle() {
     }
 
-    // function that tells user what number they entered
-    public void numberOutput() {
-        // displays number user entered
-        System.out.println("You entered the number: " + userNum);
+    /**
+     * The main method prints a stylish greeting message.
+     *
+     * @param args Command-line arguments (not used in this program)
+     */
+    public static void main(String[] args) {
+        System.out.println("Hello World, in style!");
     }
 }
